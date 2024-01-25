@@ -1,0 +1,10 @@
+{
+  "name": "mit-open-login-button",
+  "version": "0.0.1",
+  "description": "A basic login button for your website to log in using MIT Open",
+  "main": "index",
+  "types": "index",
+  "repository": "https://github.com/mitodl/mit-open-login-button",
+  "author": "Carey Gumaer <gumaerc@mit.edu>",
+  "license": "MIT"
+}
