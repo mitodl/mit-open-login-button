@@ -6,5 +6,17 @@
   "types": "index",
   "repository": "https://github.com/mitodl/mit-open-login-button",
   "author": "Carey Gumaer <gumaerc@mit.edu>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint $PROJECT_CWD/'**/*.{js,jsx,ts,tsx}'",
+    "fmt": "yarn fmt:check --write",
+    "fmt:check": "LOG_LEVEL= prettier-eslint --list-different $PROJECT_CWD/'**/*.{js,jsx,ts,tsx,scss}'"
+  },
+  "dependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-mitodl": "^1.0.0",
+    "prettier-eslint": "^16.3.0",
+    "prettier-eslint-cli": "^8.0.1"
+  }
 }
