@@ -16,6 +16,8 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-mitodl": "^1.0.0",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^0.0.1-alpha.0"
   }
 }
