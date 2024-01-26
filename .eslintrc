@@ -1,0 +1,11 @@
+{
+  "extends": ["eslint-config-mitodl", "prettier"],
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "jest": true
+  },
+  "globals": {
+    "RELEASE_VERSION": true
+  }
+}

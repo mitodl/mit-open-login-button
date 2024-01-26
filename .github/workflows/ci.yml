@@ -1,0 +1,22 @@
+name: CI
+on: [push]
+
+jobs:
+  javascript-tests:
+    runs-on: ubuntu-latest
+    env:
+      SKIP_YARN_COREPACK_CHECK: true
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.8.1
+          cache: "yarn"
+
+      - run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn lint
