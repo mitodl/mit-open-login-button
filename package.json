@@ -1,4 +1,24 @@
 {
   "name": "mit-open-login-button",
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "version": "0.0.1",
+  "description": "A basic login button for your website to log in using MIT Open",
+  "main": "index",
+  "types": "index",
+  "repository": "https://github.com/mitodl/mit-open-login-button",
+  "author": "Carey Gumaer <gumaerc@mit.edu>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint './**/*.{js,jsx,ts,tsx}'"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-mitodl": "^1.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  }
 }
