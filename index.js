@@ -13,22 +13,21 @@ export function initLoginButton(
   baseUrl,
   buttonText = "Login",
   buttonClass = "",
-  loggedInTextClass = ""
+  loggedInTextClass = "",
 ) {
   const container = document.getElementById(containerId)
   const parsedBaseUrl = new URL(baseUrl)
-  const reconstructedBaseUrl = `${parsedBaseUrl.protocol}//${parsedBaseUrl.hostname}${parsedBaseUrl.port !== "" ? `:${parsedBaseUrl.port}` : ""}`
-  const apiUrl = `${reconstructedBaseUrl}/api/v0/users/me?format=json`
-  const loginUrl = `${reconstructedBaseUrl}/login/ol-oidc/`
+  const apiUrl = `${parsedBaseUrl.origin}/api/v0/users/me?format=json`
+  const loginUrl = `${parsedBaseUrl.origin}/login/ol-oidc/`
   fetch(apiUrl, {
-    method:      "GET",
+    method: "GET",
     credentials: "include",
-    mode:        "cors",
-    headers:     {
-      Accept: "application/json"
-    }
+    mode: "cors",
+    headers: {
+      Accept: "application/json",
+    },
   })
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         // create the login button
         const linkButton = document.createElement("a")
@@ -43,7 +42,7 @@ export function initLoginButton(
       }
       return response.json()
     })
-    .then(data => {
+    .then((data) => {
       if (data["username"] !== undefined) {
         // display the logged in user
         const userName = data["username"]
