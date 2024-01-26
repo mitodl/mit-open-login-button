@@ -1901,7 +1901,6 @@ __metadata:
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     typescript: "npm:^5.3.3"
-    typescript-eslint: "npm:^0.0.1-alpha.0"
   languageName: unknown
   linkType: soft
 
@@ -2539,13 +2538,6 @@ __metadata:
     for-each: "npm:^0.3.3"
     is-typed-array: "npm:^1.1.9"
   checksum: c5163c0103d07fefc8a2ad0fc151f9ca9a1f6422098c00f695d55f9896e4d63614cd62cf8d8a031c6cee5f418e8980a533796597174da4edff075b3d275a7e23
-  languageName: node
-  linkType: hard
-
-"typescript-eslint@npm:^0.0.1-alpha.0":
-  version: 0.0.1-alpha.0
-  resolution: "typescript-eslint@npm:0.0.1-alpha.0"
-  checksum: 461874ea59d76cec61f3a01211f594ecffca42348447d79771bd6615277dd2157fdddea575c33732f9f917fe4e184af3d1ac9c93ea28dd9866e05875b70f8380
   languageName: node
   linkType: hard
 
