@@ -8,9 +8,7 @@
   "author": "Carey Gumaer <gumaerc@mit.edu>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint './**/*.{js,jsx,ts,tsx}'",
-    "fmt": "yarn fmt:check --write",
-    "fmt:check": "LOG_LEVEL= prettier-eslint --list-different './**/*.{js,jsx,ts,tsx,scss}'"
+    "lint": "eslint './**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.19.1",
@@ -18,8 +16,6 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-mitodl": "^1.0.0",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier-eslint": "^16.3.0",
-    "prettier-eslint-cli": "^8.0.1"
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
