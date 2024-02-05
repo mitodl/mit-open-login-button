@@ -17,7 +17,7 @@ export function initLoginButton(
 ) {
   const container = document.getElementById(containerId)
   const parsedBaseUrl = new URL(baseUrl)
-  const apiUrl = `${parsedBaseUrl.origin}/api/v0/users/me?format=json`
+  const apiUrl = `${parsedBaseUrl.origin}/api/v0/users/me/?format=json`
   const loginUrl = `${parsedBaseUrl.origin}/login/ol-oidc/`
   fetch(apiUrl, {
     method: "GET",
