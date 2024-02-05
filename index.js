@@ -12,7 +12,7 @@
 export function initLoginButton(
   containerId,
   baseUrl,
-  redirectUrl,
+  redirectUrl = "",
   buttonText = "Login",
   buttonClass = "",
   loggedInTextClass = "",
@@ -20,7 +20,9 @@ export function initLoginButton(
   const container = document.getElementById(containerId)
   const parsedBaseUrl = new URL(baseUrl)
   const currentUserUrl = `${parsedBaseUrl.origin}/api/v0/users/me/?format=json`
-  const loginUrl = `${parsedBaseUrl.origin}/login/ol-oidc/?redirect_url=${encodeURIComponent(redirectUrl)}`
+  const redirectUrlParam =
+    redirectUrl !== "" ? `?redirect_url=${redirectUrl}` : ""
+  const loginUrl = `${parsedBaseUrl.origin}/login/ol-oidc/${redirectUrlParam}`
   fetch(currentUserUrl, {
     method: "GET",
     credentials: "include",
