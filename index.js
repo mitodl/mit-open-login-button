@@ -21,7 +21,7 @@ export function initLoginButton(
   const parsedBaseUrl = new URL(baseUrl)
   const currentUserUrl = `${parsedBaseUrl.origin}/api/v0/users/me/?format=json`
   const redirectUrlParam =
-    redirectUrl !== "" ? `?redirect_url=${encodeURIComponent(redirectUrl)}` : ""
+    redirectUrl !== "" ? `?next=${encodeURIComponent(redirectUrl)}` : ""
   const loginUrl = `${parsedBaseUrl.origin}/login/ol-oidc/${redirectUrlParam}`
   fetch(currentUserUrl, {
     method: "GET",
