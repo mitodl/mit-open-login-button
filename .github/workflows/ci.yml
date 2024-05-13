@@ -7,7 +7,7 @@ jobs:
     env:
       SKIP_YARN_COREPACK_CHECK: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
       - uses: actions/setup-node@v3
         with:
           node-version: 20.8.1
