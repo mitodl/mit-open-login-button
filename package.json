@@ -12,7 +12,7 @@
     "lint": "eslint './**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "eslint": "^8.56.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-mitodl": "^2.0.0",
