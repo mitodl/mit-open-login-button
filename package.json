@@ -1,6 +1,6 @@
 {
   "name": "@mitodl/mit-open-login-button",
-  "packageManager": "yarn@4.4.1",
+  "packageManager": "yarn@4.5.0",
   "version": "1.0.0",
   "description": "A basic login button for your website to log in using MIT Open",
   "main": "index",
